@@ -1,0 +1,8 @@
+@startuml
+
+participant Bob << (I, #99FF99) >>
+participant Alice << (C, #99FF99) >>
+
+Bob -> Alice: First message
+
+@enduml

@@ -1,5 +1,5 @@
 @startuml
-title Single communication example
+title __Single__ **communication** example
 
 Alice -> Bob : Hello
 Alice <- Bob : ok

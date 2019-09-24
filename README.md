@@ -10,8 +10,13 @@
 ## Use sample
 
 ```shell
-java -jar ~/bin/plantuml.jar --verbose sequenceDiagram.txt
+java -jar ~/bin/plantuml.jar --verbose sequence/sequenceDiagram.txt
 eog sequenceDiagram.png
-java -jar ~/bin/plantuml.jar -testdot
+```
+
+Or
+
+```shell
+./build.sh sequence/sequenceDisgram.txt
 ```
 

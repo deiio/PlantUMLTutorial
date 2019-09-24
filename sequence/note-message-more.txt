@@ -1,0 +1,22 @@
+@startuml
+participant Alice as A
+participant Bob as B
+
+note left of A #aqua
+this is displayed
+left of Alice
+end note
+
+note right of A: This is displayed right of Alice.
+
+note over A: This is displayed over Alice.
+
+note over A, B #FFAAFF: This is displayed\nover Bob and Alice.
+
+note over B, A
+This is yet another
+example of
+a long note.
+end note
+
+@enduml

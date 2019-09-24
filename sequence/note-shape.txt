@@ -1,0 +1,13 @@
+@startuml
+caller -> server : conReq
+
+hnote over caller: idel
+
+caller <- server : conConf
+
+rnote over server
+"r" as rectangle
+"h" as hexagon
+end rnote
+
+@enduml

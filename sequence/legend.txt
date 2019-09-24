@@ -1,0 +1,12 @@
+@startuml
+
+Alice -> Bob : Authentication Request
+Alice <- Bob : Authentication Response
+
+legend right
+Short 
+legend
+endlegend
+
+@enduml
+

@@ -4,9 +4,16 @@ participant Bob as B #ff9999
 
 A ->x B
 A -> B
-A ->> B  'repeat the arrow head gets thin drawing
-A -\ B   'get top of the arrow
-A -/ B   'get bottom of the arrow
+
+'repeat the arrow head gets thin drawing
+A ->> B
+
+'get top of the arrow
+A -\ B
+
+'get bottom of the arrow
+A -/ B
+
 A \\- B
 A \\-- B
 

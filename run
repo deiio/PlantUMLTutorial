@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+SCRIPT_PATH=$(cd $(dirname $0); pwd)
+if [[ $# -lt 1 ]]; then
+  echo "Usage $0 filename"
+  exit 1
+fi
+
+SOURCE_FILENAME=$1
+if [[ ! -f "$1" ]]; then
+  echo "file $1 does not exist"
+  exit 1
+fi
+
+SOURCE_BASENAME_ONLY=$(basename $SOURCE_FILENAME)
+SOURCE_BASENAME=${SOURCE_BASENAME_ONLY%.*}
+java -jar ~/bin/plantuml.jar --version "$SOURCE_FILENAME" && eog "$(dirname $SOURCE_FILENAME)/${SOURCE_BASENAME}.png"
+
