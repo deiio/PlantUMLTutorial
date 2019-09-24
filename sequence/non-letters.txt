@@ -1,0 +1,9 @@
+@startuml
+participant Alice as A #99ff99
+participant "Bob()" as B #ff99ff
+participant "This is very\nlong" as L #9999ff
+
+A -> B: Hello
+B -> L
+L --> B: ok
+@enduml

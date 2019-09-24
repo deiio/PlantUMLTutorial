@@ -1,0 +1,6 @@
+@startuml
+title Single communication example
+
+Alice -> Bob : Hello
+Alice <- Bob : ok
+@enduml

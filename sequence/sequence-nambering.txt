@@ -1,0 +1,25 @@
+@startuml
+autonumber
+Bob -> Alice : Hello
+Bob <- Alice : ok
+
+autonumber 15
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
+
+autonumber 40 10
+Bob -> Alice : Another authenticatoin Request
+Bob <- Alice : Another authentication Response
+
+autonumber 100 "<b>[0000]"
+Bob -> Alice : Yet another authentication Request
+Bob <- Alice : Yet another authertication Response
+
+autonumber "<b>(<u>####</u>)"
+Bob -> Alice : Request
+Bob <- Alice : Response
+
+autonumber "<font color=red><b>Message 0  "
+Bob -> Alice : Hello
+Bob <- Alice : ok
+@enduml

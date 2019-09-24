@@ -1,0 +1,11 @@
+@startuml
+' use '->' to draw a message
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+/' '-->' dotted arrow
+ ' use '<-' and '<--' to improve readability
+ '/
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+@enduml
